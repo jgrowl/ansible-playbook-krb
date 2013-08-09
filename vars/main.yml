@@ -6,3 +6,8 @@ global_use_sudo: False
 # the best place to put these files but I wanted to avoid home directories in case the user that runs ansible ever changes.
 ansible_done_dir: /etc/ansible/.done
 krb_done_dir: $ansible_done_dir/krb
+
+# Used by ansible to figure out if a 1 time only task has run previously.
+krb_create_realm_done: $krb_done_dir/create-realm
+
+kdc_admin_mask: '*/admin'

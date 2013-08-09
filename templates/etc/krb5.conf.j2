@@ -1,5 +1,5 @@
 [libdefaults]
-	default_realm = {{realm}} 
+	default_realm = {{krb_realm}} 
 
 # The following krb5.conf variables are only for MIT Kerberos.
 	krb4_config = /etc/krb.conf
@@ -37,11 +37,11 @@
 	fcc-mit-ticketflags = true
 
 [realms]
-	{{realm}} = {
-    kdc = {{kdc}} 
-    admin_server = {{adminServer}} 
-    master_kdc = {{masterKdc}} 
-    default_domain = {{defaultDomain}} 
+	{{krb_realm}} = {
+    kdc = {{krb_kdc}} 
+    admin_server = {{krb_admin_server}} 
+    master_kdc = {{krb_master_kdc}} 
+    default_domain = {{krb_default_domain}} 
   }
 	ATHENA.MIT.EDU = {
 		kdc = kerberos.mit.edu:88

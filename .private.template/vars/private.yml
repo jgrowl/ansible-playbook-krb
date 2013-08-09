@@ -1,0 +1,8 @@
+#auth_include_apt_update: True
+
+krb_master_password: myKerberosSuperSecretPassword 
+krb_realm: EXAMPLE.COM 
+krb_kdc: kerberos.example.com
+krb_admin_server: kerberos.example.com
+krb_master_kdc: kerberos.example.com
+krb_default_domain: example.com 
