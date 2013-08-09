@@ -7,8 +7,9 @@
     - vars/private.yml
   user: $global_user
   sudo: $global_use_sudo
+  roles: 
+    - apt-update
   tasks:
   - include: tasks/main.yml
-  #- include: tasks/sssd.yml
   handlers:
    - include: handlers/main.yml
