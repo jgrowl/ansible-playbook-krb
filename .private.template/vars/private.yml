@@ -1,4 +1,5 @@
 #auth_include_apt_update: True
+krb_include_krb5_conf: True
 
 krb_master_password: myKerberosSuperSecretPassword 
 krb_realm: EXAMPLE.COM 
